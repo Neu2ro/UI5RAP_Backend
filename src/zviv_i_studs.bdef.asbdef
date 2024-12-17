@@ -1,0 +1,13 @@
+managed implementation in class zbp_viv_i_studs unique;
+strict ( 2 );
+
+define behavior for zviv_i_studs alias Student
+persistent table zviv_t_students
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+//  field ( readonly ) Sid, Email;
+}

@@ -1,0 +1,51 @@
+@Metadata.layer: #PARTNER
+
+@UI.headerInfo: {
+    typeName: 'Students',
+    typeNamePlural: 'Student',
+    title: {
+        type: #STANDARD,
+        value: 'fname'
+    },
+    description: {
+        type: #STANDARD,
+        value: 'lname'
+    }
+}
+
+annotate entity zviv_c_studs
+    with 
+{
+  @UI.facet: [{
+        id: 'Identity',
+        purpose: #STANDARD,
+        type: #IDENTIFICATION_REFERENCE,
+        label: 'Student',
+        position: 10
+   }]
+   
+   @UI.lineItem: [{ position: 10, label: 'Student Id' }]
+  @UI.identification: [{ position: 1, label: 'Student Id'}]
+  Sid;
+
+  @UI.lineItem: [{ position: 20, label: 'Email' }]
+  @UI.identification: [{ position: 2, label: 'Email'}]
+  Email;
+
+  @UI.lineItem: [{ position: 30, label: 'First Name' }]
+  @UI.identification: [{ position: 3, label: 'First Name'}]
+  Fname;
+
+  @UI.lineItem: [{ position: 40, label: 'Last Name' }]
+  @UI.identification: [{ position: 4, label: 'Last Name'}]
+  Lname;
+
+  @UI.lineItem: [{ position: 50, label: 'Age' }]
+  @UI.identification: [{ position: 5, label: 'Age'}]
+  Age;
+
+  @UI.lineItem: [{ position: 60, label: 'Gender' }]
+  @UI.identification: [{ position: 6, label: 'Gender'}]
+  Gndr;
+    
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition: Students'
+define service ZVIV_UI_STUDS {
+  expose zviv_c_studs as Students;
+}
