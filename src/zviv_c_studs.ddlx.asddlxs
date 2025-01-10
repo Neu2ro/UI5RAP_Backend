@@ -47,5 +47,9 @@ annotate entity zviv_c_studs
   @UI.lineItem: [{ position: 60, label: 'Gender' }]
   @UI.identification: [{ position: 6, label: 'Gender'}]
   Gndr;
+  
+  @UI.lineItem: [{ position: 60, label: 'TryDate' }]
+  @UI.identification: [{ position: 6, label: 'TryDate'}]
+  TryDate;
     
 }

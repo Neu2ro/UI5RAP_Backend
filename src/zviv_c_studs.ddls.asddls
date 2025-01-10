@@ -10,5 +10,6 @@ define root view entity zviv_c_studs
       Fname,
       Lname,
       Age,
-      Gndr
+      Gndr,
+      TryDate
 }

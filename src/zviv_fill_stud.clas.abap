@@ -22,6 +22,7 @@ CLASS zviv_fill_stud IMPLEMENTATION.
     ls_student-lname  = 'Doe'.
     ls_student-age    = 22.
     ls_student-gndr   = 'Male'.
+    ls_student-trydt  = sy-datum.
     APPEND ls_student TO lt_students.
 
     ls_student-sid    = 2.
@@ -30,6 +31,7 @@ CLASS zviv_fill_stud IMPLEMENTATION.
     ls_student-lname  = 'Smith'.
     ls_student-age    = 21.
     ls_student-gndr   = 'Female'.
+    ls_student-trydt  = sy-datum.
     APPEND ls_student TO lt_students.
 
     ls_student-sid    = 3.
@@ -38,6 +40,7 @@ CLASS zviv_fill_stud IMPLEMENTATION.
     ls_student-lname  = 'Wilson'.
     ls_student-age    = 23.
     ls_student-gndr   = 'Male'.
+    ls_student-trydt  = sy-datum.
     APPEND ls_student TO lt_students.
 
     " Insert data into the database table
